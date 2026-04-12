@@ -1,0 +1,24 @@
+# Node / Frontend (React + Vite)
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# Database
+*.sqlite3
+*.db
+
+# OS / Editor
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
