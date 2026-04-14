@@ -30,12 +30,12 @@ def get_db_connection():
 
 def fetch_all_dict(cursor):
     """ Helper to fetch rows as dictionary """
-    columns = [col[0] for col in cursor.description]
+    columns = [col[0].lower() for col in cursor.description]
     cursor.rowfactory = lambda *args: dict(zip(columns, args))
     return cursor.fetchall()
 
 def fetch_one_dict(cursor):
     """ Helper to fetch single row as dictionary """
-    columns = [col[0] for col in cursor.description]
+    columns = [col[0].lower() for col in cursor.description]
     cursor.rowfactory = lambda *args: dict(zip(columns, args))
     return cursor.fetchone()

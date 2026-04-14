@@ -34,6 +34,7 @@ CREATE TABLE Doctors (
     last_name VARCHAR2(50) NOT NULL,
     email VARCHAR2(100) UNIQUE,
     phone VARCHAR2(20),
+    password VARCHAR2(100) DEFAULT 'doc123' NOT NULL,
     CONSTRAINT fk_doc_dept FOREIGN KEY (department_id)
     REFERENCES Departments(department_id)
 );
@@ -68,7 +69,8 @@ CREATE TABLE Patients (
     gender VARCHAR2(10) CHECK (gender IN ('Male','Female','Other')),
     phone VARCHAR2(20) UNIQUE NOT NULL,
     email VARCHAR2(100),
-    address VARCHAR2(255)
+    address VARCHAR2(255),
+    password VARCHAR2(100) DEFAULT 'pat123' NOT NULL
 );
 
 --------------------------------------------------

@@ -13,14 +13,14 @@ INSERT INTO Departments VALUES ('D008','Gynecology',NULL);
 --------------------------------------------------
 -- DOCTORS
 --------------------------------------------------
-INSERT INTO Doctors VALUES ('DR-0001','D001','Rajesh','Sharma','rajesh@clinic.com','9876543210');
-INSERT INTO Doctors VALUES ('DR-0002','D002','Priya','Mehta','priya@clinic.com','9876543211');
-INSERT INTO Doctors VALUES ('DR-0003','D003','Amit','Kumar','amit@clinic.com','9988776655');
-INSERT INTO Doctors VALUES ('DR-0004','D004','Sneha','Patel','sneha@clinic.com','8877665544');
-INSERT INTO Doctors VALUES ('DR-0005','D005','Vikram','Singh','vikram@clinic.com','7766554433');
-INSERT INTO Doctors VALUES ('DR-0006','D006','Ananya','Reddy','ananya@clinic.com','9876501234');
-INSERT INTO Doctors VALUES ('DR-0007','D007','Karthik','Rao','karthik@clinic.com','8899001122');
-INSERT INTO Doctors VALUES ('DR-0008','D008','Meera','Desai','meera@clinic.com','9988112233');
+INSERT INTO Doctors VALUES ('DR-0001','D001','Rajesh','Sharma','rajesh@clinic.com','9876543210','doc_rajesh');
+INSERT INTO Doctors VALUES ('DR-0002','D002','Priya','Mehta','priya@clinic.com','9876543211','doc_priya');
+INSERT INTO Doctors VALUES ('DR-0003','D003','Amit','Kumar','amit@clinic.com','9988776655','doc_amit');
+INSERT INTO Doctors VALUES ('DR-0004','D004','Sneha','Patel','sneha@clinic.com','8877665544','doc_sneha');
+INSERT INTO Doctors VALUES ('DR-0005','D005','Vikram','Singh','vikram@clinic.com','7766554433','doc_vikram');
+INSERT INTO Doctors VALUES ('DR-0006','D006','Ananya','Reddy','ananya@clinic.com','9876501234','doc_ananya');
+INSERT INTO Doctors VALUES ('DR-0007','D007','Karthik','Rao','karthik@clinic.com','8899001122','doc_karthik');
+INSERT INTO Doctors VALUES ('DR-0008','D008','Meera','Desai','meera@clinic.com','9988112233','doc_meera');
 
 --------------------------------------------------
 -- SET HEAD DOCTORS
@@ -33,14 +33,14 @@ UPDATE Departments SET head_doctor_id='DR-0004' WHERE department_id='D004';
 --------------------------------------------------
 -- PATIENTS
 --------------------------------------------------
-INSERT INTO Patients VALUES ('PT-0001','Ramesh','Kumar',DATE '1985-05-15','Male','9876543210','ramesh@gmail.com','Mumbai');
-INSERT INTO Patients VALUES ('PT-0002','Sita','Sharma',DATE '1990-08-22','Female','9876543211','sita@gmail.com','Mumbai');
-INSERT INTO Patients VALUES ('PT-0003','Arun','Patel',DATE '1978-12-05','Male','9876543212','arun@gmail.com','Mumbai');
-INSERT INTO Patients VALUES ('PT-0004','Lakshmi','Iyer',DATE '1995-03-18','Female','9876543213','lakshmi@gmail.com','Mumbai');
-INSERT INTO Patients VALUES ('PT-0005','Suresh','Reddy',DATE '1982-07-30','Male','9876543214','suresh@gmail.com','Mumbai');
-INSERT INTO Patients VALUES ('PT-0006','Kavita','Singh',DATE '1988-11-25','Female','9876543215','kavita@gmail.com','Mumbai');
-INSERT INTO Patients VALUES ('PT-0007','Deepak','Gupta',DATE '1975-04-08','Male','9876543216','deepak@gmail.com','Mumbai');
-INSERT INTO Patients VALUES ('PT-0008','Pooja','Nair',DATE '1992-09-14','Female','9876543217','pooja@gmail.com','Mumbai');
+INSERT INTO Patients VALUES ('PT-0001','Ramesh','Kumar',DATE '1985-05-15','Male','9876543210','ramesh@gmail.com','Mumbai','pat_ramesh');
+INSERT INTO Patients VALUES ('PT-0002','Sita','Sharma',DATE '1990-08-22','Female','9876543211','sita@gmail.com','Mumbai','pat_sita');
+INSERT INTO Patients VALUES ('PT-0003','Arun','Patel',DATE '1978-12-05','Male','9876543212','arun@gmail.com','Mumbai','pat_arun');
+INSERT INTO Patients VALUES ('PT-0004','Lakshmi','Iyer',DATE '1995-03-18','Female','9876543213','lakshmi@gmail.com','Mumbai','pat_lakshmi');
+INSERT INTO Patients VALUES ('PT-0005','Suresh','Reddy',DATE '1982-07-30','Male','9876543214','suresh@gmail.com','Mumbai','pat_suresh');
+INSERT INTO Patients VALUES ('PT-0006','Kavita','Singh',DATE '1988-11-25','Female','9876543215','kavita@gmail.com','Mumbai','pat_kavita');
+INSERT INTO Patients VALUES ('PT-0007','Deepak','Gupta',DATE '1975-04-08','Male','9876543216','deepak@gmail.com','Mumbai','pat_deepak');
+INSERT INTO Patients VALUES ('PT-0008','Pooja','Nair',DATE '1992-09-14','Female','9876543217','pooja@gmail.com','Mumbai','pat_pooja');
 
 --------------------------------------------------
 -- APPOINTMENTS
